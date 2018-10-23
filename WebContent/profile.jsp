@@ -17,7 +17,7 @@ PreparedStatement pst=con.prepareStatement("select * from user_table where useri
 pst.setString(1,uid);
 ResultSet rs=pst.executeQuery();
 if(rs.next()) {
-	out.println("<table align=\"center\" border=\"0px\" cellpadding=\"2\" cellspacing=\"4\">");
+	out.println("<table align=\"center\" border=\"0px\" cellpadding=\"2\" cellspacing=\"9\">");
 do {
 		String id=rs.getString("userid");
 		String name=rs.getString("name");
@@ -29,7 +29,7 @@ do {
 		out.println("<tr><td>City</td><td>"+ct+"</td></tr>");
 		out.println("<tr><td>Email</td><td>"+em+"</td></tr>");
 		out.println("<tr><td>Salary</td><td>"+sal+"</td></tr>");
-		out.println("<tr><td><button type=\"submit\"><a href=\"edit.jsp?uid="+uid+"\">Update</button>");
+		out.println("<tr><td><button type=\"submit\"><a href=\"edit.jsp?uid="+uid+"\">Edit</button>");
 	}while(rs.next());
 	out.print("</table>");
 }

@@ -15,7 +15,8 @@ System.out.println("Connected to Database");
 PreparedStatement pst=con.prepareStatement("select * from user_table");
 ResultSet rs=pst.executeQuery();
 if(rs.next()) {
-	out.println("<table border=\"1px\">");
+	out.println("<br><br>");
+	out.println("<table border=\"1\" align=\"center\" cellpadding=\"5\">");
 	do {
 		String id=rs.getString("userid");
 		String name=rs.getString("name");

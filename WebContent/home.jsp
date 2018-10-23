@@ -6,6 +6,6 @@
 </head>
 <body>
 <jsp:include page="head.jsp"></jsp:include>
-<h2>Welcome ${uname}</h2>
+<h2 align="center">Welcome ${uname}</h2>
 </body>
 </html>

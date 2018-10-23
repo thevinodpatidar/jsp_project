@@ -22,10 +22,10 @@ if(rs.next()){
 		String em=rs.getString("email");
 		double sal=rs.getDouble("salary");
 		
-		out.println("<form action=\"update.jsp\">");
+		out.println("<form action=\"update.jsp\" align=\"center\">");
 		out.println("<input type=\"hidden\" name=\"uid\" value=\""+id+"\">");
 						
-		out.println("<table border=\"1\">");
+		out.println("<table border=\"0\" align=\"center\" cellpadding=\"5\">");
 		out.println("<tr><th>User id</th><td>"+id+"</td></tr>");
 		out.println("<tr><th>Name</th><td><input type=\"text\" name=\"nm\" value=\""+name+"\"></td></tr>");
 		out.println("<tr><th>City</th><td><input type=\"text\" name=\"ct\" value=\""+ct+"\"></td></tr>");
